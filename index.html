@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\style.css">
+    <title>JavaScript Quiz!</title>
+</head>
+
+<body>
+    
+<!--top of the page will have a link the the high score page and the timer will be displayed-->
+<header>
+    <div>Coding Quiz
+        <a href="highscores.html">View Highscores</a>
+    </div>
+</header>
+
+<!-- start button will begin the quiz and start the timer-->
+<main>
+    <div>
+        <h1>Coding Quiz</h1>
+        <button type="button" id="start-btn">Get Started!</button>
+    </div>
+
+    <div class="buttons">
+        <button>Exit Quiz</button>
+        <button>Continue</button>
+    </div>
+
+    <section id="questions">
+        <div -d="time-rem">
+            <span>Time Left: 60</span>
+        </div>
+        <h1 class="que-text">
+            <span></span>
+        </h1>
+        <div id="choices">
+            <div class="option"><span></span></div>
+            <div class="option"><span></span></div>
+            <div class="option"><span></span></div>
+            <div class="option"><span></span></div>
+        </div>
+        <div id="response">
+            <span></span>
+        </div>
+    </section>
+
+    <div id="quiz-end">
+        <div>
+            <h1>end of the Quiz</h1>
+            <h3 class="score"></h3>
+            <h2>Enter Your Initials</h2>
+            <input type="text" id="initials">
+            <button id="save-score">Submit</button>
+        </div>
+    </div>
+</main>
+    <script src="/assets/js/script.js"></script>
+    <script src="assets\js\questions.js"></script>
+</body>
